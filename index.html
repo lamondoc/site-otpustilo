@@ -1,0 +1,733 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Отпустило — лечебный массаж, иглотерапия, ЛФК, реабилитация и массаж лица. Индивидуальный подход." />
+  <title>Отпустило — лечебный массаж, иглотерапия, ЛФК, реабилитация</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo logo--header-wide" href="#top">Отпустило</a>
+      <nav class="nav--desktop" aria-label="Основное меню">
+        <a href="#services">Услуги</a>
+        <a href="#about">О методике</a>
+        <a href="#about-me">Обо мне</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header__toolbar">
+        <a class="btn btn--header nav-desktop__cta" href="#booking">Записаться</a>
+        <a class="btn btn--header btn--reviews-link" href="#reviews">Отзывы Яндекса</a>
+        <a class="btn btn--header btn--phone" href="tel:+79897658520">+7 (989) 765-85-20</a>
+        <button
+          class="burger"
+          type="button"
+          aria-label="Открыть меню"
+          id="burger"
+          aria-expanded="false"
+          aria-controls="mobile-nav-drawer"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay" tabindex="-1" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Меню сайта" aria-hidden="true">
+    <nav class="mobile-nav__list" id="nav">
+      <a class="mobile-nav__link" href="#services">Услуги</a>
+      <a class="mobile-nav__link" href="#about">О методике</a>
+      <a class="mobile-nav__link" href="#about-me">Обо мне</a>
+      <a class="mobile-nav__link" href="#contacts">Контакты</a>
+      <a class="btn btn--primary mobile-nav__cta" href="#booking">Записаться</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Лечение и профилактика без лишних обещаний</p>
+        <h1 class="hero__title">Ваше тело заслуживает <em>бережной</em> заботы</h1>
+        <p class="hero__text">
+          Лечебный массаж, иглотерапия, ЛФК, реабилитация после травм и операций, а также массаж лица —
+          всё в одном месте, с индивидуальным планом восстановления.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--hero-promo" href="#booking">Онлайн-запись</a>
+          <a class="btn btn--ghost btn--hero-promo" href="#services">Смотреть услуги</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust reveal-on-scroll">
+      <div class="container trust__grid">
+        <div class="trust__item">
+          <strong>10+</strong>
+          <span>лет практики</span>
+        </div>
+        <div class="trust__item">
+          <strong>Индивидуально</strong>
+          <span>план под ваши цели</span>
+        </div>
+        <div class="trust__item">
+          <strong>Доказательные</strong>
+          <span>методики ЛФК и массажа</span>
+        </div>
+        <div class="trust__item">
+          <strong>Комфорт</strong>
+          <span>спокойная атмосфера кабинета</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--services" id="services">
+      <div class="section--services__bg" aria-hidden="true"></div>
+      <div class="container section--services__content reveal-on-scroll">
+        <header class="section__head">
+          <h2 class="section__title">Услуги</h2>
+          <p class="section__lead">Направления, с которыми вы можете ко мне обратиться</p>
+        </header>
+        <div class="services-carousel">
+          <div class="services-carousel__track-wrap">
+          <div class="cards" id="services-cards">
+          <article class="card card--massage">
+            <div class="card__media" aria-hidden="true">
+              <img class="card__media-img" src="images/card-massage.jpg" width="800" height="520" alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='images/card-massage.svg'" />
+            </div>
+            <div class="card__content">
+              <div class="card__icon" aria-hidden="true"></div>
+              <h3 class="card__title">Оздоровительный массаж</h3>
+              <div class="card__meta">
+                <span class="card__price">3 000 ₽</span>
+                <span class="card__duration">1 ч</span>
+              </div>
+              <p class="card__text">
+                Комплексный подход к восстановлению организма: снятие напряжения, улучшение кровообращения, общее оздоровление.
+              </p>
+              <div class="card__actions">
+                <button type="button" class="btn btn--ghost btn--small" data-open-dialog="service-massage">Подробнее</button>
+              </div>
+            </div>
+          </article>
+          <article class="card card--acupuncture">
+            <div class="card__media" aria-hidden="true">
+              <img class="card__media-img" src="images/card-acupuncture.jpg" width="800" height="520" alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='images/card-acupuncture.svg'" />
+            </div>
+            <div class="card__content">
+              <div class="card__icon" aria-hidden="true"></div>
+              <h3 class="card__title">Иглоукалывание</h3>
+              <div class="card__meta">
+                <span class="card__price">1 500 ₽</span>
+                <span class="card__duration">30 м</span>
+              </div>
+              <p class="card__text">
+                Точечное воздействие на биологически активные точки для снятия боли, улучшения сна и общего тонуса.
+              </p>
+              <div class="card__actions">
+                <button type="button" class="btn btn--ghost btn--small" data-open-dialog="service-acupuncture">Подробнее</button>
+              </div>
+            </div>
+          </article>
+          <article class="card card--lfk">
+            <div class="card__media" aria-hidden="true">
+              <img class="card__media-img" src="images/card-lfk.jpg" width="800" height="520" alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='images/card-lfk.svg'" />
+            </div>
+            <div class="card__content">
+              <div class="card__icon" aria-hidden="true"></div>
+              <h3 class="card__title">ЛФК</h3>
+              <div class="card__meta">
+                <span class="card__price">1 000 ₽</span>
+                <span class="card__duration">30 м</span>
+              </div>
+              <p class="card__text">
+                Индивидуальный комплекс упражнений для восстановления после травм и улучшения подвижности суставов.
+              </p>
+              <div class="card__actions">
+                <button type="button" class="btn btn--ghost btn--small" data-open-dialog="service-lfk">Подробнее</button>
+              </div>
+            </div>
+          </article>
+          <article class="card card--face">
+            <div class="card__media" aria-hidden="true">
+              <img class="card__media-img" src="images/card-face.jpg" width="800" height="520" alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='images/card-face.svg'" />
+            </div>
+            <div class="card__content">
+              <div class="card__icon" aria-hidden="true"></div>
+              <h3 class="card__title">Массаж лица</h3>
+              <div class="card__meta">
+                <span class="card__price">3 000 ₽</span>
+                <span class="card__duration">1 ч 30 м</span>
+              </div>
+              <p class="card__text">
+                Снятие напряжения, лимфодренаж и подтяжка овала лица без инъекций и оперативного вмешательства.
+              </p>
+              <div class="card__actions">
+                <button type="button" class="btn btn--ghost btn--small" data-open-dialog="service-face">Подробнее</button>
+              </div>
+            </div>
+          </article>
+          <article class="card card--massage">
+            <div class="card__media" aria-hidden="true">
+              <img class="card__media-img" src="images/card-myofascial.jpg" width="800" height="520" alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='images/card-myofascial.svg'" />
+            </div>
+            <div class="card__content">
+              <div class="card__icon" aria-hidden="true"></div>
+              <h3 class="card__title">Миофасциальный массаж</h3>
+              <div class="card__meta">
+                <span class="card__price">3 000 ₽</span>
+                <span class="card__duration">1 ч</span>
+              </div>
+              <p class="card__text">
+                Глубокая проработка фасций и мышц для освобождения от зажимов и восстановления естественных движений.
+              </p>
+              <div class="card__actions">
+                <button type="button" class="btn btn--ghost btn--small" data-open-dialog="service-myofascial">Подробнее</button>
+              </div>
+            </div>
+          </article>
+          <article class="card card--massage">
+            <div class="card__media" aria-hidden="true">
+              <img class="card__media-img" src="images/card-relaxing.jpg" width="800" height="520" alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='images/card-relaxing.svg'" />
+            </div>
+            <div class="card__content">
+              <div class="card__icon" aria-hidden="true"></div>
+              <h3 class="card__title">Расслабляющий массаж</h3>
+              <div class="card__meta">
+                <span class="card__price">3 000 ₽</span>
+                <span class="card__duration">1 ч</span>
+              </div>
+              <p class="card__text">
+                Мягкие техники для полного расслабления тела, снятия стресса и восстановления эмоционального баланса.
+              </p>
+              <div class="card__actions">
+                <button type="button" class="btn btn--ghost btn--small" data-open-dialog="service-relaxing">Подробнее</button>
+              </div>
+            </div>
+          </article>
+          <article class="card card--lfk">
+            <div class="card__media" aria-hidden="true">
+              <img class="card__media-img" src="images/card-rehabilitation.jpg" width="800" height="520" alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='images/card-rehabilitation.svg'" />
+            </div>
+            <div class="card__content">
+              <div class="card__icon" aria-hidden="true"></div>
+              <h3 class="card__title">Реабилитация</h3>
+              <div class="card__meta">
+                <span class="card__price">3 000 ₽</span>
+                <span class="card__duration">1 ч</span>
+              </div>
+              <p class="card__text">
+                Комплексная программа восстановления после травм и операций с индивидуальным подходом к каждому пациенту.
+              </p>
+              <div class="card__actions">
+                <button type="button" class="btn btn--ghost btn--small" data-open-dialog="service-rehabilitation">Подробнее</button>
+              </div>
+            </div>
+          </article>
+          <article class="card card--massage">
+            <div class="card__media" aria-hidden="true">
+              <img class="card__media-img" src="images/card-sports.jpg" width="800" height="520" alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='images/card-sports.svg'" />
+            </div>
+            <div class="card__content">
+              <div class="card__icon" aria-hidden="true"></div>
+              <h3 class="card__title">Спортивный массаж</h3>
+              <div class="card__meta">
+                <span class="card__price">3 000 ₽</span>
+                <span class="card__duration">1 ч</span>
+              </div>
+              <p class="card__text">
+                Специальные техники для подготовки к нагрузкам, ускорения восстановления и профилактики травм.
+              </p>
+              <div class="card__actions">
+                <button type="button" class="btn btn--ghost btn--small" data-open-dialog="service-sports">Подробнее</button>
+              </div>
+            </div>
+          </article>
+          <article class="card card--acupuncture">
+            <div class="card__media" aria-hidden="true">
+              <img class="card__media-img" src="images/card-yumeiho.jpg" width="800" height="520" alt="" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='images/card-yumeiho.svg'" />
+            </div>
+            <div class="card__content">
+              <div class="card__icon" aria-hidden="true"></div>
+              <h3 class="card__title">Юмейхо-терапия</h3>
+              <div class="card__meta">
+                <span class="card__price">3 000 ₽</span>
+                <span class="card__duration">1 ч</span>
+              </div>
+              <p class="card__text">
+                Японская методика коррекции позвоночника и суставов через мягкое воздействие на тело и дыхание.
+              </p>
+              <div class="card__actions">
+                <button type="button" class="btn btn--ghost btn--small" data-open-dialog="service-yumeiho">Подробнее</button>
+              </div>
+            </div>
+          </article>
+          </div>
+          </div>
+          <div class="services-carousel__nav" aria-label="Навигация по услугам">
+            <button type="button" class="services-carousel__btn services-carousel__btn--prev" aria-label="Предыдущая услуга" data-services-prev>
+              <span class="services-carousel__btn-icon services-carousel__btn-icon--prev" aria-hidden="true"></span>
+            </button>
+            <div class="services-carousel__dots" id="services-carousel-dots" role="group" aria-label="Слайды услуг"></div>
+            <button type="button" class="services-carousel__btn services-carousel__btn--next" aria-label="Следующая услуга" data-services-next>
+              <span class="services-carousel__btn-icon services-carousel__btn-icon--next" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="about">
+      <div class="container split reveal-on-scroll">
+        <div class="split__text">
+          <h2 class="section__title">Философия работы</h2>
+          <p class="split__p">
+            В центре моей практики — не «релакс ради релакса», а ваш измеримый прогресс: избавление от боли, свобода движений и четкое понимание, как поддерживать тело в форме.
+          </p>
+          <p class="split__p">
+            На первой встрече мы подробно разбираем жалобы и состояние здоровья, чтобы исключить противопоказания. На основе этого я подбираю сочетание методик — массаж, иглы или ЛФК — которое подходит именно вам.
+          </p>
+          <ul class="checklist">
+            <li>Никаких навязанных курсов. Вы приходите ровно столько раз, сколько нужно для результата.</li>
+            <li>Бережный подход. Каждое действие обосновано и направлено на вашу безопасность.</li>
+            <li>Забота вне кабинета. Даю простые домашние упражнения и рекомендации, чтобы закрепить эффект между сеансами.</li>
+          </ul>
+        </div>
+        <div class="split__panel" aria-hidden="true">
+          <blockquote>
+            «Отпустило — про то, чтобы отпустить напряжение: в теле и в голове. Я помогаю сделать это бережно и по делу.»
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about-me">
+      <div class="container about-me reveal-on-scroll">
+        <header class="section__head">
+          <h2 class="section__title">Обо мне</h2>
+          <p class="section__lead">Знакомство и документы об образовании</p>
+        </header>
+        <div class="about-me__text">
+          <p>
+            Меня зовут <strong>Ламонов Александр</strong>. Я являюсь специалистом с <strong>высшим медицинским образованием</strong> и работаю в формате,
+            сочетающем доказательный подход, ручные техники и бережное отношение к вашему состоянию.
+          </p>
+          <p>
+            Помогаю с восстановлением после нагрузок и травм, болью и напряжением, поддержкой ЛФК и иглотерапией — с опорой на ваши цели и показания.
+          </p>
+        </div>
+        <div class="about-me__content">
+          <div class="about-me__photo-column">
+            <div class="about-me__photo about-me__photo--1">
+              <img src="images/about-me-photo-1.jpg" width="297" height="436" alt="Ламонов Александр - фото 1" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/about-me-photo-1.svg'" />
+            </div>
+            <div class="about-me__photo about-me__photo--2">
+              <img src="images/about-me-photo-2.jpg" width="297" height="436" alt="Ламонов Александр - фото 2" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/about-me-photo-2.svg'" />
+            </div>
+          </div>
+          <ul class="about-me__diplomas" aria-label="Дипломы и сертификаты">
+            <li class="about-me__diploma">
+              <button type="button" class="diploma-frame diploma-frame--thumb" aria-label="Показать скан">
+                <img src="images/diploma-01.jpg" width="560" height="396" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/diploma-01.svg'" />
+              </button>
+            </li>
+            <li class="about-me__diploma">
+              <button type="button" class="diploma-frame diploma-frame--thumb" aria-label="Показать скан">
+                <img src="images/diploma-02.jpg" width="560" height="396" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/diploma-02.svg'" />
+              </button>
+            </li>
+            <li class="about-me__diploma">
+              <button type="button" class="diploma-frame diploma-frame--thumb" aria-label="Показать скан">
+                <img src="images/diploma-03.jpg" width="560" height="396" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/diploma-03.svg'" />
+              </button>
+            </li>
+            <li class="about-me__diploma">
+              <button type="button" class="diploma-frame diploma-frame--thumb" aria-label="Показать скан">
+                <img src="images/diploma-04.jpg" width="560" height="396" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/diploma-04.svg'" />
+              </button>
+            </li>
+            <li class="about-me__diploma">
+              <button type="button" class="diploma-frame diploma-frame--thumb" aria-label="Показать скан">
+                <img src="images/diploma-05.jpg" width="560" height="396" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/diploma-05.svg'" />
+              </button>
+            </li>
+            <li class="about-me__diploma">
+              <button type="button" class="diploma-frame diploma-frame--thumb" aria-label="Показать скан">
+                <img src="images/diploma-06.jpg" width="560" height="396" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/diploma-06.svg'" />
+              </button>
+            </li>
+            <li class="about-me__diploma">
+              <button type="button" class="diploma-frame diploma-frame--thumb" aria-label="Показать скан">
+                <img src="images/diploma-07.jpg" width="560" height="396" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/diploma-07.svg'" />
+              </button>
+            </li>
+            <li class="about-me__diploma">
+              <button type="button" class="diploma-frame diploma-frame--thumb" aria-label="Показать скан">
+                <img src="images/diploma-08.jpg" width="560" height="396" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/diploma-08.svg'" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="booking" data-dikidi-url="https://dikidi.net/1228806">
+      <div class="container booking reveal-on-scroll">
+        <div class="booking__intro">
+          <h2 class="section__title">Онлайн-запись</h2>
+          <p class="section__lead">
+            Запись через сервис Dikidi. Отметьте согласие с политикой конфиденциальности — после этого откроется переход к онлайн-записи.
+          </p>
+        </div>
+        <div class="booking-gate" id="booking-gate">
+          <label class="consent consent--booking field--full">
+            <input type="checkbox" id="booking-consent" autocomplete="off" />
+            <span id="booking-consent-label">
+              Нажимая кнопку, вы соглашаетесь с <a href="privacy.html" target="_blank" rel="noopener noreferrer" style="white-space: nowrap;">Политикой конфиденциальности</a>, даете согласие на обработку данных о здоровье и получение информационных рассылок
+            </span>
+          </label>
+          <button type="button" class="btn btn--primary btn--block booking-gate__btn" id="booking-go" disabled aria-describedby="booking-consent-label">
+            Записаться онлайн
+          </button>
+          <p class="booking-gate__hint" id="booking-hint">Чтобы продолжить, установите галочку согласия выше.</p>
+          <div class="booking-gate__extra">
+            <h3 class="booking__subtitle">Первый шаг — короткая консультация</h3>
+            <p class="booking__lead-extra">
+              Расскажите, что беспокоит; подскажу, с чего логичнее начать — массаж, иглы или ЛФК.
+            </p>
+          </div>
+          <a class="btn btn--ghost btn--block booking-gate__write" href="#contacts">Написать</a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section section--alt section--reviews"
+      id="reviews"
+      data-yandex-reviews-src="https://yandex.ru/maps-reviews-widget/241125886306?comments"
+    >
+      <div class="container reviews-block reveal-on-scroll">
+        <header class="section__head">
+          <h2 class="section__title">Отзывы</h2>
+        </header>
+        <div class="yandex-reviews yandex-reviews--page">
+          <iframe
+            class="yandex-reviews__iframe js-yandex-reviews-iframe"
+            title="Отзывы на Яндекс.Картах"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p class="yandex-reviews__fallback" id="yandex-reviews-fallback-page" hidden>
+            Укажите URL виджета отзывов: в теге секции <code>#reviews</code> задайте атрибут
+            <code>data-yandex-reviews-src</code> (скопируйте из кабинета организации на Яндекс.Картах, формат вида
+            <code>https://yandex.ru/maps-reviews-widget/…/comments</code>) — тогда виджет подтянется здесь и в шапке.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <div class="container contacts reveal-on-scroll">
+        <div>
+          <h2 class="section__title">Контакты</h2>
+          <ul class="contacts__list">
+            <li>
+              <strong>Адрес</strong><br />
+              <a href="https://yandex.ru/maps/org/241125886306" target="_blank" rel="noopener noreferrer" class="contacts__link">
+                г. Новороссийск,<br />ул. Набережная Адмирала Серебрякова, д. 61, каб. 1
+              </a>
+            </li>
+            <li><strong>Время работы</strong><br />Пн–Сб: 11:00–20:00</li>
+            <li><strong>Телефон</strong><br /><a href="tel:+79897658520">+7 (989) 765-85-20</a></li>
+          </ul>
+          <div class="contacts__social">
+            <a class="social" href="https://wa.me/79897658520" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+            <a class="social" href="tg://msg?to=79897658520" rel="noopener noreferrer">Telegram</a>
+            <a class="social" href="https://max.messenger/?to=79897658520" rel="noopener noreferrer" target="_blank">Макс</a>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe
+            class="contacts__map-iframe"
+            src="https://yandex.ru/map-widget/v1/?ll=37.768899%2C44.723971&amp;z=15.5&amp;ol=biz&amp;oid=241125886306"
+            title="Отпустило — Яндекс.Карты"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="diploma-lightbox" id="diploma-lightbox" aria-modal="true" aria-label="Просмотр документа">
+    <button type="button" class="diploma-lightbox__scrim" data-close-dialog aria-label="Закрыть просмотр" tabindex="-1"></button>
+    <div class="diploma-lightbox__shell">
+      <button type="button" class="diploma-lightbox__close" data-close-dialog aria-label="Закрыть просмотр диплома">×</button>
+      <div class="diploma-lightbox__stage">
+        <button type="button" class="diploma-lightbox__arrow diploma-lightbox__arrow--prev" id="diploma-prev" aria-label="Предыдущий документ">
+          <span class="diploma-lightbox__arrow-icon" aria-hidden="true"></span>
+        </button>
+        <div class="diploma-lightbox__center">
+          <div class="diploma-lightbox__viewport diploma-lightbox__viewport--desktop">
+            <img class="diploma-lightbox__img" id="diploma-lightbox-img" alt="" decoding="async" />
+          </div>
+          <div class="diploma-lightbox__viewport diploma-lightbox__viewport--mobile">
+            <div class="diploma-lightbox__strip" id="diploma-lightbox-strip" role="list"></div>
+          </div>
+        </div>
+        <button type="button" class="diploma-lightbox__arrow diploma-lightbox__arrow--next" id="diploma-next" aria-label="Следующий документ">
+          <span class="diploma-lightbox__arrow-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="footer__logo" href="#top">Отпустило</a>
+      <nav class="footer__nav">
+        <a href="#services">Услуги</a>
+        <a href="#about" class="desktop-only">О методике</a>
+        <a href="#about-me" class="desktop-only">Обо мне</a>
+        <a href="#reviews" class="desktop-only">Отзывы</a>
+        <a href="#booking">Запись</a>
+        <a href="#contacts" class="desktop-only">Контакты</a>
+        <a href="privacy.html">Политика ПДн</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> · Отпустило · лечебный массаж и реабилитация</p>
+    </div>
+  </footer>
+
+  <dialog class="service-dialog" id="service-massage" aria-labelledby="service-massage-title">
+    <div class="service-dialog__inner">
+      <header class="service-dialog__head">
+        <h2 class="service-dialog__title" id="service-massage-title">Оздоровительный массаж</h2>
+        <button type="button" class="service-dialog__close" data-close-dialog aria-label="Закрыть">×</button>
+      </header>
+      <div class="service-dialog__body">
+        <h3 class="service-dialog__subtitle">Для чего</h3>
+        <p>Снять боль и спазм, улучшить кровообращение и подвижность, ускорить восстановление после нагрузок, травм или операций, смягчить проявления остеохондроза и зажимов от стресса.</p>
+        <h3 class="service-dialog__subtitle">Для кого</h3>
+        <p>Офисные работники с болью в шее и пояснице, спортсмены и любители активности, люди после переломов и растяжений на этапе реабилитации, при хронической усталости мышц и нарушениях осанки.</p>
+        <h3 class="service-dialog__subtitle">Как проходит</h3>
+        <p>Сначала короткий опрос и осмотр: где больно, что уже пробовали. Затем массаж выбранной зоны или всего тела с акцентом на проблему: классические приёмы, мягкая мануальная работа с мышцами и фасциями.</p>
+        <h3 class="service-dialog__subtitle">Важно</h3>
+        <p class="service-dialog__note">При острой травме, температуре, онкологии, тромбозах и ряде других состояний массаж может быть противопоказан — на первом визите уточняю анамнез и при сомнениях направляю к врачу.</p>
+      </div>
+      <footer class="service-dialog__foot">
+        <a class="btn btn--primary" href="#booking" data-close-dialog>Записаться</a>
+        <button type="button" class="btn btn--ghost" data-close-dialog>Закрыть</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog class="service-dialog" id="service-acupuncture" aria-labelledby="service-acupuncture-title">
+    <div class="service-dialog__inner">
+      <header class="service-dialog__head">
+        <h2 class="service-dialog__title" id="service-acupuncture-title">Иглоукалывание</h2>
+        <button type="button" class="service-dialog__close" data-close-dialog aria-label="Закрыть">×</button>
+      </header>
+      <div class="service-dialog__body">
+        <h3 class="service-dialog__subtitle">Для чего</h3>
+        <p>Точечное воздействие на биологически активные точки для снятия боли, улучшения сна, снижения тревожности и общего тонуса организма.</p>
+        <h3 class="service-dialog__subtitle">Для кого</h3>
+        <p>Взрослым без острых инфекционных состояний, при готовности к аккуратной телесной практике. Подходит тем, кто хочет комплексной поддержки организма.</p>
+        <h3 class="service-dialog__subtitle">Как проходит</h3>
+        <p>Обсуждаем жалобы и цели, определяем зоны воздействия. Используются стерильные одноразовые иглы, введение обычно почти безболезненное.</p>
+        <h3 class="service-dialog__subtitle">Важно</h3>
+        <p class="service-dialog__note">Противопоказания: беременность, острые кожные заболевания в зоне воздействия, тяжёлые психические расстройства в острой фазе.</p>
+      </div>
+      <footer class="service-dialog__foot">
+        <a class="btn btn--primary" href="#booking" data-close-dialog>Записаться</a>
+        <button type="button" class="btn btn--ghost" data-close-dialog>Закрыть</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog class="service-dialog" id="service-lfk" aria-labelledby="service-lfk-title">
+    <div class="service-dialog__inner">
+      <header class="service-dialog__head">
+        <h2 class="service-dialog__title" id="service-lfk-title">ЛФК</h2>
+        <button type="button" class="service-dialog__close" data-close-dialog aria-label="Закрыть">×</button>
+      </header>
+      <div class="service-dialog__body">
+        <h3 class="service-dialog__subtitle">Для чего</h3>
+        <p>Индивидуальный комплекс упражнений для восстановления после травм, улучшения подвижности суставов, укрепления мышечного корсета и исправления осанки.</p>
+        <h3 class="service-dialog__subtitle">Для кого</h3>
+        <p>При остеохондрозе и протрузиях без острой фазы, при сколиозе и сутулости, после ортопедических вмешательств (по рекомендации врача), для пожилых людей с осторожной прогрессией нагрузки.</p>
+        <h3 class="service-dialog__subtitle">Как проходит</h3>
+        <p>Оценка движений и болевых зон, подбор комплекса: растяжка, укрепление стабилизаторов, дыхательные паттерны, баланс. Домашнее задание в простом формате.</p>
+        <h3 class="service-dialog__subtitle">Важно</h3>
+        <p class="service-dialog__note">При острой боли, онемении, слабости в конечностях сначала нужна очная консультация врача. ЛФК не заменяет медицинскую помощь при обострениях.</p>
+      </div>
+      <footer class="service-dialog__foot">
+        <a class="btn btn--primary" href="#booking" data-close-dialog>Записаться</a>
+        <button type="button" class="btn btn--ghost" data-close-dialog>Закрыть</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog class="service-dialog" id="service-face" aria-labelledby="service-face-title">
+    <div class="service-dialog__inner">
+      <header class="service-dialog__head">
+        <h2 class="service-dialog__title" id="service-face-title">Массаж лица</h2>
+        <button type="button" class="service-dialog__close" data-close-dialog aria-label="Закрыть">×</button>
+      </header>
+      <div class="service-dialog__body">
+        <h3 class="service-dialog__subtitle">Для чего</h3>
+        <p>Снятие напряжения жевательных и шейных мышц, улучшение лимфотока и уменьшение отёков, подтяжка овала лица без инъекций и оперативного вмешательства.</p>
+        <h3 class="service-dialog__subtitle">Для кого</h3>
+        <p>Для тех, кто много работает за компьютером, страдает от напряжения в челюсти, хочет мягкий wellness-уход с оздоровительным уклоном. Подходит мужчинам и женщинам.</p>
+        <h3 class="service-dialog__subtitle">Как проходит</h3>
+        <p>Очищение кожи, работа по линиям лица, шее и зоне декольте: расслабляющие, лимфодренажные и буккальные элементы — только если нет противопоказаний и по согласованию.</p>
+        <h3 class="service-dialog__subtitle">Важно</h3>
+        <p class="service-dialog__note">Не проводится при острых воспалениях кожи, герпесе в активной фазе, недавних инъекциях и операциях на лице.</p>
+      </div>
+      <footer class="service-dialog__foot">
+        <a class="btn btn--primary" href="#booking" data-close-dialog>Записаться</a>
+        <button type="button" class="btn btn--ghost" data-close-dialog>Закрыть</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog class="service-dialog" id="service-myofascial" aria-labelledby="service-myofascial-title">
+    <div class="service-dialog__inner">
+      <header class="service-dialog__head">
+        <h2 class="service-dialog__title" id="service-myofascial-title">Миофасциальный массаж</h2>
+        <button type="button" class="service-dialog__close" data-close-dialog aria-label="Закрыть">×</button>
+      </header>
+      <div class="service-dialog__body">
+        <h3 class="service-dialog__subtitle">Для чего</h3>
+        <p>Глубокая проработка фасций и мышц для освобождения от зажимов, восстановления естественных движений и улучшения подвижности.</p>
+        <h3 class="service-dialog__subtitle">Для кого</h3>
+        <p>При хронических болях в спине и шее, ограничении подвижности, после спортивных травм, при миофасциальном болевом синдроме.</p>
+        <h3 class="service-dialog__subtitle">Как проходит</h3>
+        <p>Аккуратное воздействие на триггерные точки и фасции, постепенное растягивание и расслабление мышечных волокон. Процедура может быть интенсивной, но контролируемой.</p>
+        <h3 class="service-dialog__subtitle">Важно</h3>
+        <p class="service-dialog__note">Не проводится при острых воспалениях, повышенной температуре, онкологических заболеваниях. Возможна легкая болезненность после процедуры.</p>
+      </div>
+      <footer class="service-dialog__foot">
+        <a class="btn btn--primary" href="#booking" data-close-dialog>Записаться</a>
+        <button type="button" class="btn btn--ghost" data-close-dialog>Закрыть</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog class="service-dialog" id="service-relaxing" aria-labelledby="service-relaxing-title">
+    <div class="service-dialog__inner">
+      <header class="service-dialog__head">
+        <h2 class="service-dialog__title" id="service-relaxing-title">Расслабляющий массаж</h2>
+        <button type="button" class="service-dialog__close" data-close-dialog aria-label="Закрыть">×</button>
+      </header>
+      <div class="service-dialog__body">
+        <h3 class="service-dialog__subtitle">Для чего</h3>
+        <p>Полное расслабление тела, снятие стресса, восстановление эмоционального баланса и улучшение качества сна.</p>
+        <h3 class="service-dialog__subtitle">Для кого</h3>
+        <p>При высоком уровне стресса, хронической усталости, нарушениях сна, для общего расслабления и профилактики нервного перенапряжения.</p>
+        <h3 class="service-dialog__subtitle">Как проходит</h3>
+        <p>Мягкие, плавные движения по всему телу, акцент на расслабляющих техниках. Создается спокойная атмосфера с приятной музыкой и ароматами.</p>
+        <h3 class="service-dialog__subtitle">Важно</h3>
+        <p class="service-dialog__note">Идеален для регулярного приема как часть заботы о себе. Подходит почти всем без противопоказаний.</p>
+      </div>
+      <footer class="service-dialog__foot">
+        <a class="btn btn--primary" href="#booking" data-close-dialog>Записаться</a>
+        <button type="button" class="btn btn--ghost" data-close-dialog>Закрыть</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog class="service-dialog" id="service-rehabilitation" aria-labelledby="service-rehabilitation-title">
+    <div class="service-dialog__inner">
+      <header class="service-dialog__head">
+        <h2 class="service-dialog__title" id="service-rehabilitation-title">Реабилитация</h2>
+        <button type="button" class="service-dialog__close" data-close-dialog aria-label="Закрыть">×</button>
+      </header>
+      <div class="service-dialog__body">
+        <h3 class="service-dialog__subtitle">Для чего</h3>
+        <p>Комплексная программа восстановления после травм и операций с индивидуальным подходом к каждому пациенту для возвращения к активной жизни.</p>
+        <h3 class="service-dialog__subtitle">Для кого</h3>
+        <p>После ортопедических операций, травм опорно-двигательного аппарата, инсультов, при хронических заболеваниях суставов и позвоночника.</p>
+        <h3 class="service-dialog__subtitle">Как проходит</h3>
+        <p>Комплексный подход: массаж, ЛФК, физиотерапия и другие методы по показаниям. Индивидуальный план восстановления с постепенным увеличением нагрузки.</p>
+        <h3 class="service-dialog__subtitle">Важно</h3>
+        <p class="service-dialog__note">Требует консультации лечащего врача и регулярности процедур. Эффективность зависит от соблюдения рекомендаций специалиста.</p>
+      </div>
+      <footer class="service-dialog__foot">
+        <a class="btn btn--primary" href="#booking" data-close-dialog>Записаться</a>
+        <button type="button" class="btn btn--ghost" data-close-dialog>Закрыть</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog class="service-dialog" id="service-sports" aria-labelledby="service-sports-title">
+    <div class="service-dialog__inner">
+      <header class="service-dialog__head">
+        <h2 class="service-dialog__title" id="service-sports-title">Спортивный массаж</h2>
+        <button type="button" class="service-dialog__close" data-close-dialog aria-label="Закрыть">×</button>
+      </header>
+      <div class="service-dialog__body">
+        <h3 class="service-dialog__subtitle">Для чего</h3>
+        <p>Специальные техники для подготовки к нагрузкам, ускорения восстановления после тренировок, профилактики травм и повышения спортивных результатов.</p>
+        <h3 class="service-dialog__subtitle">Для кого</h3>
+        <p>Спортсменам любого уровня, людям с активным образом жизни, тем, кто регулярно занимается фитнесом или имеет физическую работу.</p>
+        <h3 class="service-dialog__subtitle">Как проходит</h3>
+        <p>Интенсивная проработка мышечных групп с акцентом на зоны наибольшей нагрузки. Техники разогрева, растяжения и восстановления.</p>
+        <h3 class="service-dialog__subtitle">Важно</h3>
+        <p class="service-dialog__note">Не проводится при острых травмах и воспалениях. Может вызывать дискомфорт при воздействии на напряженные мышцы.</p>
+      </div>
+      <footer class="service-dialog__foot">
+        <a class="btn btn--primary" href="#booking" data-close-dialog>Записаться</a>
+        <button type="button" class="btn btn--ghost" data-close-dialog>Закрыть</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog class="service-dialog" id="service-yumeiho" aria-labelledby="service-yumeiho-title">
+    <div class="service-dialog__inner">
+      <header class="service-dialog__head">
+        <h2 class="service-dialog__title" id="service-yumeiho-title">Юмейхо-терапия</h2>
+        <button type="button" class="service-dialog__close" data-close-dialog aria-label="Закрыть">×</button>
+      </header>
+      <div class="service-dialog__body">
+        <h3 class="service-dialog__subtitle">Для чего</h3>
+        <p>Японская методика коррекции позвоночника и суставов через мягкое воздействие на тело, дыхание и энергетические каналы.</p>
+        <h3 class="service-dialog__subtitle">Для кого</h3>
+        <p>При проблемах с позвоночником, сколиозе, нарушениях осанки, болях в спине и суставах, для общего оздоровления и гармонизации тела.</p>
+        <h3 class="service-dialog__subtitle">Как проходит</h3>
+        <p>Комплекс техник: мануальное воздействие на позвоночник и суставы, специальные упражнения, работа с дыханием. Процедура проходит в комфортном темпе.</p>
+        <h3 class="service-dialog__subtitle">Важно</h3>
+        <p class="service-dialog__note">Не проводится при острых состояниях позвоночника, после недавних операций, при онкологических заболеваниях. Требует регулярности для эффекта.</p>
+      </div>
+      <footer class="service-dialog__foot">
+        <a class="btn btn--primary" href="#booking" data-close-dialog>Записаться</a>
+        <button type="button" class="btn btn--ghost" data-close-dialog>Закрыть</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <div class="cookie" id="cookie" role="dialog" aria-label="Уведомление о cookie">
+    <p>
+      Сайт использует cookie и сервисы аналитики при их подключении. Подробнее — в
+      <a href="privacy.html">политике конфиденциальности</a>.
+    </p>
+    <div class="cookie__actions">
+      <button type="button" class="btn btn--small btn--primary" id="cookie-accept">Принять</button>
+      <button type="button" class="btn btn--small btn--ghost" id="cookie-decline">Отклонить</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
