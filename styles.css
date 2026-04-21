@@ -20,6 +20,14 @@
   box-sizing: border-box;
 }
 
+a,
+button,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: clip;
@@ -227,6 +235,10 @@ a:hover {
   }
 
   .nav--desktop {
+    display: none !important;
+  }
+
+  .desktop-only {
     display: none !important;
   }
 
@@ -2100,7 +2112,7 @@ button.diploma-frame.diploma-frame--thumb:focus-visible {
 
 @media (max-width: 900px) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .container {
@@ -2114,7 +2126,7 @@ button.diploma-frame.diploma-frame--thumb:focus-visible {
 
 @media (max-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .container {
@@ -2166,7 +2178,7 @@ button.diploma-frame.diploma-frame--thumb:focus-visible {
 
 @media (max-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .container {
@@ -2199,6 +2211,7 @@ button.diploma-frame.diploma-frame--thumb:focus-visible {
     padding: 0.5rem 0.95rem;
     flex: 0 0 auto;
     text-align: center;
+    white-space: nowrap;
   }
 
   .burger span {
@@ -2214,5 +2227,33 @@ button.diploma-frame.diploma-frame--thumb:focus-visible {
   .split__panel {
     order: 2;
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .header__inner {
+    gap: 0.2rem;
+  }
+  
+  .header__toolbar {
+    gap: 0.2rem;
+  }
+  
+  .logo--header-wide {
+    font-size: 1.15rem;
+  }
+  
+  .btn--header {
+    font-size: 0.6rem;
+    padding: 0.35rem 0.4rem;
+  }
+  
+  .burger {
+    padding: 5px;
+    margin: -5px -5px -5px 0;
+  }
+  
+  .burger span {
+    width: 20px;
   }
 }
