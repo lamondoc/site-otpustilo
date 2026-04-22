@@ -1570,9 +1570,10 @@ button.diploma-frame.diploma-frame--thumb:focus-visible {
   transition: filter 0.3s ease;
 }
 
-/* 1-й и 5-й дипломы: оставляем ярче, так как они, видимо, уже темные или нормальные */
+/* 1-й, 5-й и 8-й дипломы: оставляем ярче, так как они, видимо, уже темные или нормальные */
 .about-me__diplomas li:nth-child(1) .diploma-frame img,
-.about-me__diplomas li:nth-child(5) .diploma-frame img {
+.about-me__diplomas li:nth-child(5) .diploma-frame img,
+.about-me__diplomas li:nth-child(8) .diploma-frame img {
   filter: sepia(5%) contrast(0.98) brightness(0.98);
 }
 
@@ -1823,7 +1824,8 @@ button.diploma-frame.diploma-frame--thumb:hover img {
 }
 
 .diploma-lightbox__slide:nth-child(1) img,
-.diploma-lightbox__slide:nth-child(5) img {
+.diploma-lightbox__slide:nth-child(5) img,
+.diploma-lightbox__slide:nth-child(8) img {
   filter: sepia(5%) contrast(0.98) brightness(0.98);
 }
 
