@@ -632,6 +632,12 @@ body.nav-open .burger span:nth-child(3) {
   padding: 5rem 0;
 }
 
+@media (max-width: 992px) {
+  .section {
+    padding: 6.5rem 0;
+  }
+}
+
 section#about-me.section {
   padding-bottom: 2rem;
 }
